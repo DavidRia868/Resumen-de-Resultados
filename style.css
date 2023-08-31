@@ -1,0 +1,375 @@
+:root{
+    
+
+--Light-colorRed: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+
+
+--Light-slate-Fondoblue: hsl(252, 100%, 67%);
+--Light-royal-fondoblue: hsl(241, 81%, 54%);
+
+--Violet-blue-circle: hsla(256, 72%, 46%, 1); 
+--Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+
+
+/*Neutral*/
+
+--Color-White: hsl(0, 0%, 100%);
+--Color-Paleblue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-grayblue: hsl(224, 30%, 27%);
+}
+
+/*importar fuentes HANKED*/
+
+@font-face {
+    font-family: Hanked-bold;
+    src: url(assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: Hanked-extraBold;
+    src: url(assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Hanked-medium;
+    src: url(assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+@font-face {
+    font-family: Hanked-var;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CENTRAR LOS ELEMENTOS*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content-Resul{
+    display: flex;
+    width: 600px;
+    height: 400px;
+    margin-top: 60px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 5px 10px 30px 5px var(--Light-lavender);
+}
+
+.result{
+    width: 300px;
+    height: 400px;
+    background-color: var(--Light-royal-fondoblue);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.title-resul{
+    font-family: Hanked-extraBold;
+    color: var(--Light-lavender);
+    
+}
+
+
+
+.content-circle{
+    
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    padding: 30px 20px;
+    margin: 20px 50px;
+    background: linear-gradient(var(--Violet-blue-circle),var(--Persian-blue-circle))
+}
+.ptext{
+    font-family: Hanked-bold;
+    color: var(--Color-White);
+    font-size: 4rem;
+    
+}
+
+.ptext-resul{
+    font-family: Hanked-bold;
+    color: hsl(240, 8%, 70%);
+}
+
+.content-text-gre{
+    width: 200px;
+    
+}
+
+.text-great{
+    font-family: Hanked-bold;
+    color: var(--Color-White);
+}
+
+.text-parra{
+    font-family: Hanked-medium;
+    color: var(--Light-lavender);
+    font-size: 14px;
+    padding-top: 10px;
+}
+.sumary{
+    width: 300px;
+    height: 400px;
+    background-color: var(--Color-White);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.title-sumary{
+    font-family: Hanked-extraBold;
+    color: black;
+    padding-top: 15px;
+    
+}
+
+.content-list{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.div-list{
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px;
+}
+.reaction{
+    
+    background-color: hsl(0, 100%, 67%,.1);;
+}   
+
+.icon{
+    float: left;
+    padding: 0 5px;
+}
+
+.title-reac{
+    float: left;
+    padding: 0 5px;
+    font-family: Hanked-bold;
+    font-size: 14px;
+}
+
+.hreac{
+    color: var(--Light-colorRed);
+}
+
+.hmemo{
+    color: var(--Orangey-yellow);
+}
+
+.hver{
+    color: var(--Green-teal);
+}
+
+.hvis{
+    color: var(--Cobalt-blue);
+}
+.text-list{
+    float: right;
+    padding: 0 5px;
+    font-family: Hanked-bold;
+    font-size: 14px;
+    color: hsl(240, 4%, 67%);
+}
+
+.ppp{
+    float: right;
+    padding: 1px 2px;
+    font-family: Hanked-bold;
+    font-size: 14px;
+    color: rgb(94, 94, 94);
+}
+.memory{
+    background-color: hsla(39, 100%, 54%, 0.1);
+        
+}
+
+.verbal{
+   
+    background-color:hsla(166, 100%, 37%,.1);
+
+}
+
+.visual{
+    background-color: hsl(234, 85%, 45%,.1);
+}
+
+
+.btn{
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--Dark-grayblue);
+    padding: 10px 0;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    font-family: Hanked-bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--Light-royal-fondoblue);
+    color: black;
+}
+
+/*RESPONSIVE TABLET*/
+
+
+@media (max-width: 625px) {
+    
+    body{
+        
+        margin: 0px 0px;
+    }
+    .content-Resul{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        justify-content: center;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .result{
+        width: 100%;
+        height: 90%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        
+             
+        padding: 20px 20px;
+    }
+    .content-text-gre{
+        width: 60%;
+    }
+    .text-parra{
+        font-size: 16px;
+        
+    }
+
+    .sumary{
+        width: 95%;
+        justify-content: center;
+    }
+    
+    .title-sumary{
+        padding-left: 20px;
+        font-size: 1rem;
+    }
+    .content-list{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .content-list{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .div-list{
+        width: 90%;
+        
+    }
+
+    .btn{
+        width: 90%;
+    }
+}
+
+
+/*RESPONSIVE MOVIL*/
+@media (max-width: 375px) {
+    
+    body{
+        
+        margin: 0px 0px;
+    }
+    .content-Resul{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        justify-content: center;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .result{
+        width: 100%;
+        height: 90%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        
+             
+        padding: 20px 20px;
+    }
+    .content-text-gre{
+        width: 300px;
+    }
+    .text-parra{
+        width: 280px;
+        font-size: 16px;
+        
+    }
+
+    .sumary{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .title-sumary{
+        padding-left: 20px;
+        font-size: 1rem;
+    }
+    .content-list{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .div-list{
+        width: 90%;
+        
+    }
+
+    .btn{
+        width: 90%;
+    }
+}
